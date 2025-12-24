@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>우리의 빛나는 교실</title>
+    <style>
+        /* 전체 스타일 */
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        /* 헤더 스타일 */
+        header {
+            text-align: center;
+            padding: 30px 0;
+            background-color: #a2d9ff;
+            color: #fff;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        /* 메뉴 스타일 */
+        nav {
+            background-color: #e9ecef;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #495057;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #ced4da;
+        }
+
+        /* 섹션 스타일 */
+        section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: #f8f9fa;
+        }
+
+        section h2 {
+            font-size: 2em;
+            color: #343a40;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #dee2e6;
+            padding-bottom: 10px;
+        }
+
+        /* 게시물 목록 스타일 */
+        .post-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .post-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        .post-list li:last-child {
+            border-bottom: none;
+        }
+
+        .post-list a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        .post-list span {
+            color: #6c757d;
+            margin-left: 10px;
+        }
+
+        /* 이미지 스타일 */
+        .image-gallery {
+            display: flex;
+            overflow-x: auto;
+            padding: 10px 0;
+        }
+
+        .image-gallery img {
+            width: 200px;
+            height: auto;
+            margin-right: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        /* 캘린더 스타일 */
+        .calendar {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        .calendar th,
+        .calendar td {
+            border: 1px solid #dee2e6;
+            padding: 8px;
+            text-align: center;
+        }
+
+        .calendar th {
+            background-color: #e9ecef;
+            font-weight: bold;
+        }
+
+        /* 푸터 스타일 */
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #343a40;
+            color: #fff;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        /* 아이콘 스타일 (Font Awesome) */
+        .fas {
+            margin-right: 5px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-graduation-cap"></i> 우리의 빛나는 교실</h1>
+            <p>함께 만들어가는 소중한 추억들</p>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#notice"><i class="fas fa-bullhorn"></i> 공지사항</a></li>
+                <li><a href="#gallery"><i class="fas fa-images"></i> 사진첩</a></li>
+                <li><a href="#calendar"><i class="fas fa-calendar-alt"></i> 학사일정</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> 연락하기</a></li>
+            </ul>
+        </nav>
+
+        <section id="notice">
+            <h2><i class="fas fa-bullhorn"></i> 공지사항</h2>
+            <ul class="post-list">
+                <li>
+                    <a href="#">다음 주 월요일, 특별 강연 안내</a>
+                    <span>2024-05-08</span>
+                </li>
+                <li>
+                    <a href="#">이번 주 금요일은 체육대회입니다!</a>
+                    <span>2024-05-05</span>
+                </li>
+                <li>
+                    <a href="#">중간고사 시간표를 확인하세요</a>
+                    <span>2024-05-01</span>
+                </li>
+            </ul>
+        </section>
+
+        <section id="gallery">
+            <h2><i class="fas fa-images"></i> 사진첩</h2>
+            <div class="image-gallery">
+                <img src="https://via.placeholder.com/200x150" alt="갤러리 이미지 1">
+                <img src="https://via.placeholder.com/200x150" alt="갤러리 이미지 2">
+                <img src="https://via.placeholder.com/200x150" alt="갤러리 이미지 3">
+                <img src="https://via.placeholder.com/200x150" alt="갤러리 이미지 4">
+                <img src="https://via.placeholder.com/200x150" alt="갤러리 이미지 5">
+            </div>
+        </section>
+
+        <section id="calendar">
+            <h2><i class="fas fa-calendar-alt"></i> 학사일정</h2>
+            <table class="calendar">
+                <thead>
+                    <tr>
+                        <th>일</th>
+                        <th>월</th>
+                        <th>화</th>
+                        <th>수</th>
+                        <th>목</th>
+                        <th>금</th>
+                        <th>토</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>26</td>
+                        <td>27</td>
+                        <td>28</td>
+                        <td>29</td>
+                        <td>30</td>
+                        <td>31</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contact">
+            <h2><i class="fas fa-envelope"></i> 연락하기</h2>
+            <p>궁금한 점이나 건의사항이 있으면 언제든지 연락주세요!</p>
+            <p>담임 선생님: 김민지 (minji.kim@example.com)</p>
+            <p>학급 회장: 박서준 (seojun.park@example.com)</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 우리의 빛나는 교실. All rights reserved.</p>
+    </footer>
+</body>
+</html>
